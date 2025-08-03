@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - EDF SHEETROCK Y MÁS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+ 
+    </ul>
+  </nav>
+
+  <main class="contenido">
+    <h2>Envíanos un mensaje</h2>
+    <form action="mailto:eliameljf@gmail.com" method="POST" enctype="text/plain">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+<hr>
+<div>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Caja de Comentarios</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4ff;
+      padding: 20px;
+    }
+
+    .comentario-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      font-size: 16px;
+      resize: none;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 10px;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .comentarios {
+      margin-top: 30px;
+    }
+
+    .comentario {
+      background-color: #e9f0ff;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="comentario-container">
+  <h2>Deja tu comentario</h2>
+  <textarea id="comentarioInput" placeholder="Escribe tu comentario aquí..."></textarea>
+  <br>
+  <button onclick="agregarComentario()">Publicar</button>
+
+  <div class="comentarios" id="listaComentarios">
+    <!-- Comentarios aparecerán aquí -->
+  </div>
+</div>
+
+<script>
+  function agregarComentario() {
+    const texto = document.getElementById("comentarioInput").value.trim();
+    if (texto === "") {
+      alert("Por favor escribe un comentario.");
+      return;
+    }
+
+    const contenedor = document.getElementById("listaComentarios");
+
+    const nuevoComentario = document.createElement("div");
+    nuevoComentario.classList.add("comentario");
+    nuevoComentario.textContent = texto;
+
+    contenedor.prepend(nuevoComentario); // Agrega el comentario al principio
+    document.getElementById("comentarioInput").value = ""; // Limpia la caja
+  }
+</script>
+
+</body>
+</html>
+</div>
+
+    <h2>Ubicación</h2>
+    <div class="mapa">
+      <iframe src="https://www.google.com/maps?q=Veron+Bavaro+Punta+Cana&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 EDF SHEETROCK Y MÁS</p>
+  </footer>
+</body>
+</html>
